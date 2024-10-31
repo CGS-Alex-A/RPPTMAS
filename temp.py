@@ -47,7 +47,7 @@ while True:
     if TempC > 25:
         red.duty_u16(62213)
         blue.duty_u16(0)
-        buzz.duty_u16(max((TempC-25)+1,25,30) * 13107)
+        buzz.duty_u16(65535)
 
     elif TempC < 20:
         red.duty_u16(0)
