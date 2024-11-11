@@ -60,7 +60,7 @@ while True:
         blue.duty_u16(int(TempC*2185))
         buzz.duty_u16(30000)
 
-    else:
+    else: #pulses led
         while TempC < 25 and TempC > 20:
             for i in range(1,ledPulse):
                 green.duty_u16(ledPulse)
